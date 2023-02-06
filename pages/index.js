@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div className=" flex h-[70vh] w-screen flex-col items-center justify-start bg-primary">
-      <nav className=" relative box-border flex h-24 w-11/12 max-w-[78.9rem] flex-row  items-center justify-between py-4">
+    <div className=" relative flex h-[70vh] w-screen flex-col items-center justify-start bg-primary">
+      <nav className="  box-border flex h-24 w-11/12 max-w-[78.9rem] flex-row  items-center justify-between py-4">
         <img className="w-35" src="./assets/discord_main_logo.svg"></img>
         <ul className="flex flex-row space-x-8 text-white">
           <li className="hover:underline">Download</li>
