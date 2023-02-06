@@ -20,7 +20,7 @@ export default function Home() {
         </button>
       </nav>
 
-      <section className=" grid w-11/12 max-w-[60.9rem] grid-cols-4 grid-rows-3 items-center justify-items-center py-16">
+      <section className=" z-40 grid w-11/12 max-w-[60.9rem] grid-cols-4 grid-rows-3 items-center justify-items-center py-16">
         <h1 className="col-span-4 text-7xl font-extrabold text-white ">
           IMAGINE A PLACE...
         </h1>
@@ -38,8 +38,19 @@ export default function Home() {
         </button>
       </section>
 
-      <div className=" absolute -left-[336px]  bottom-0 z-10 w-[689px]">
-        <img src="./assets/left_bg_landing_header.svg"></img>
+      <div className=" absolute top-0  left-0 z-10 h-[70vh] w-full ">
+        <img
+          className="absolute left-0 bottom-0 z-20 w-1/5"
+          src="./assets/left_bg_landing_header.svg"
+        ></img>
+        <img
+          className="absolute bottom-0 z-10 w-[1000px] "
+          src="./assets/center_bg_landing_header.svg"
+        ></img>
+        <img
+          className="absolute right-0 bottom-0 z-20 w-1/5"
+          src="./assets/right_bg_landing_header.svg"
+        ></img>
       </div>
     </div>
   );
