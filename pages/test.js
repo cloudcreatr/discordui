@@ -1,20 +1,21 @@
 export default function Home() {
   return (
-    <div className="relative box-content flex h-[70vh] w-full flex-col items-center justify-start overflow-hidden bg-primary lg:h-[600px]">
-      <svg
-        className="stroke-white"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-        />
-      </svg>
+    <div className=" grid grid-cols-4 items-start justify-items-stretch gap-4 p-20 ">
+      <div className="  col-span-2 row-start-3 rounded-md bg-slate-500 p-5 text-xl text-white">
+        <div className="h-[100px] w-[100px] rounded-lg bg-zinc-900"></div>
+      </div>
+      <div className=" order-3 col-span-2 rounded-md bg-yellow-500 p-5 text-xl text-white">
+        <div className="h-[200px] w-[100px] rounded-lg bg-zinc-900"></div>
+      </div>
+      <div className=" order-2 col-span-2 rounded-md bg-blue-500 p-5 text-xl text-white">
+        <div className="h-[100px] w-[100px] rounded-lg bg-zinc-900"></div>
+      </div>
+      <div className=" order-1 col-span-1 rounded-md bg-red-500 p-5 text-xl text-white">
+        <div className="h-[100px] w-[100px] rounded-lg bg-zinc-900"></div>
+      </div>
+      <div className="  col-span-2 row-start-3 rounded-md bg-green-500 p-5 text-xl text-white">
+        <div className="h-[100px] w-[100px] rounded-lg bg-zinc-900"></div>
+      </div>
     </div>
   );
 }
