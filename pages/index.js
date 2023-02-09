@@ -1,9 +1,9 @@
 export default function Home() {
   return (
-    <div className=" relative flex h-[70vh] w-screen flex-col items-center justify-start bg-primary">
-      <nav className="  box-border flex h-24 w-11/12 max-w-[78.9rem] flex-row  items-center justify-between py-4">
+    <div className=" relative box-content flex h-[70vh] w-full flex-col items-center justify-start overflow-hidden bg-primary lg:h-[600px]">
+      <nav className=" relative box-border flex h-24 w-11/12 max-w-[78.9rem] flex-row  items-center justify-between py-4">
         <img className="w-35" src="./assets/discord_main_logo.svg"></img>
-        <ul className="flex flex-row space-x-8 text-white">
+        <ul className=" hidden flex-row space-x-8 text-white lg:flex">
           <li className="hover:underline">Download</li>
           <li className="hover:underline">Nitro</li>
           <li className="hover:underline">safety</li>
@@ -13,42 +13,55 @@ export default function Home() {
           <li className="hover:underline">Careers</li>
         </ul>
         <button
-          className="rounded-full bg-white px-8  py-3
-        hover:shadow-xl"
+          className="hidden rounded-full bg-white  px-8
+        py-3 hover:shadow-xl lg:block"
         >
           Login
         </button>
+        <svg
+          className="block w-10 stroke-white lg:hidden"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
       </nav>
 
-      <section className=" z-40 grid w-11/12 max-w-[60.9rem] grid-cols-4 grid-rows-3 items-center justify-items-center py-16">
-        <h1 className="col-span-4 text-7xl font-extrabold text-white ">
+      <section className=" z-40 flex w-11/12 max-w-[60.9rem] flex-col content-between justify-between py-12 md:justify-items-center md:py-16">
+        <h1 className="col-span-4 text-left text-5xl font-extrabold text-white md:text-7xl ">
           IMAGINE A PLACE...
         </h1>
-        <p className=" text-1xl col-span-4 w-4/5 pt-8 text-center font-medium leading-loose text-white">
+        <p className=" text-1xl col-span-4 w-4/5 pt-8 text-left font-medium leading-loose text-white lg:text-center">
           ...where you can belong to a school club, a gaming group, or a
           worldwide art community. Where just you and a handful of friends can
           spend time together. A place that makes it easy to talk every day and
           hang out more often.
         </p>
-        <button className=" col-span-2 mr-2  justify-self-end rounded-full bg-white py-4 px-11 text-xl">
-          Download for Windows
-        </button>
-        <button className="col-span-2 ml-2  justify-self-start rounded-full bg-black py-4 px-11 text-xl text-white">
-          Download for Windows
-        </button>
+        <div className=" flex justify-between">
+          <button className=" mr-2 rounded-full bg-white py-4 px-11 text-xl md:inline md:w-[50%]">
+            Download for Windows
+          </button>
+          <button className="ml-2 hidden  rounded-full bg-black py-4 px-11 text-xl text-white md:col-span-2 md:block md:w-[50%]">
+            Download for Windows
+          </button>
+        </div>
       </section>
-
-      <div className=" absolute top-0  left-0 z-10 h-[70vh] w-full ">
+      <div className=" absolute right-0 left-0 bottom-0 top-0  box-content  h-full w-full  min-w-[3000px]">
         <img
-          className="absolute left-0 bottom-0 z-20 w-1/5"
+          className=" absolute left-1 bottom-0 z-10 -ml-[14rem] w-[600px]  md:max-lg:hidden lg:-ml-[20rem] 2xl:-ml-4"
           src="./assets/left_bg_landing_header.svg"
         ></img>
         <img
-          className="absolute bottom-0 z-10 w-[1000px] "
+          className="absolute bottom-0 z-0 max-sm:hidden "
           src="./assets/center_bg_landing_header.svg"
         ></img>
         <img
-          className="absolute right-0 bottom-0 z-20 w-1/5"
+          className="absolute right-[1000px] bottom-0 z-10 ml-4 w-[600px] md:max-lg:right-[2000px]"
           src="./assets/right_bg_landing_header.svg"
         ></img>
       </div>
